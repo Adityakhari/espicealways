@@ -1,0 +1,73 @@
+<html>
+ <head> <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=DynaPuff:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+    <title>Star Wars Cafe | Gallery</title>
+         <link rel="icon" type="image/png" href="smallogo.png">
+    </head>
+<body>
+    <center> 
+    <h1 class="slides">Gallery</h1>
+        <h1>P.S. Made it first time so not that "good"</h1>
+    </center>
+            <!-- Banner Starts -->
+        <div id="main-banner">
+            <div id="slider">
+                <div id="slides">
+                    <img src="h.png" alt="banner" class="h">
+                    <img src="d.png" alt="banner" class="d">
+                    <img src="av.png" alt="banner" class"a">
+                </div>
+            </div>
+        </div>
+        <!-- Banner Ends -->
+    </body>
+    <style>
+        .slides{
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            font-family: 'Aboreto';
+            text-decoration: underline;
+            text-decoration-color: #f2c035;
+        }
+        html{
+            background-color: black;
+            color: white;
+            font-family: 'Aboreto';
+            text-decoration: underline;
+            text-decoration-color: #f2c035;
+        }
+                #main-banner {
+                width: 100%;
+                max-height: 500px;
+                overflow: hidden;
+            }
+            #main-banner img {
+                width: 100%;
+            }
+            #slider {
+                overflow: hidden;
+            }
+            #slides {
+                position: relative;
+                width: 500%;
+                margin: 0;
+                left: 0;
+                text-align: left;
+                font-size: 0;
+                animation: 10s slidy infinite;
+            }
+            #slides img {
+                width: 20%;
+                float: left;
+            }
+                    /* Animation */
+            @keyframes slidy {
+                0% { left: 0%; }
+                28% { left: 0%; }
+                33% { left: -100%; }
+                61% { left: -100%; }
+                66% { left: -200%; }
+                94% { left: -200%; }
+                100% { left: 0%; }
+    </style>
+</html>
